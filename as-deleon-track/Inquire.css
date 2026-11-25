@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #091e60;
+  background: #f0f3ff;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.logo img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* HEADER */
+
+.page-header {
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  max-width: 750px;
+  font-size: 43px;
+  line-height: 1.15;
+  font-weight: 800;
+  color: #071d60;
+  margin-bottom: 24px;
+}
+
+.page-header p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #34558c;
+}
+
+/* INQUIRY CARD */
+
+.inquiry-card {
+  width: 100%;
+  background: #ffffff;
+  padding: 25px 28px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.inquiry-card h2 {
+  font-size: 27px;
+  color: #071d60;
+  margin-bottom: 18px;
+}
+
+/* FORM */
+
+.inquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 100%;
+}
+
+.form-group label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #092568;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  border: 1.5px solid #d0d7e5;
+  border-radius: 9px;
+  padding: 12px 17px;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  color: #092568;
+  background: #ffffff;
+  outline: none;
+}
+
+.form-group input,
+.form-group select {
+  height: 47px;
+}
+
+.form-group textarea {
+  min-height: 105px;
+  resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #8190ad;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #2225d2;
+}
+
+/* SUBMIT BUTTON */
+
+.submit-btn {
+  width: 200px;
+  height: 53px;
+  border: none;
+  border-radius: 10px;
+  background: #2225d2;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.submit-btn:hover {
+  background: #092baf;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: auto;
+  padding-top: 35px;
+  color: #34558c;
+  font-size: 14px;
+  line-height: 1.6;
+}
